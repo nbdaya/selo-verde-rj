@@ -195,15 +195,116 @@
 }
 
 @media(max-width:560px){
-  .hero-copy{transform:translateX(-145px)}
-  .hero-copy h1{font-size:38px}
-  .hero-copy h2{font-size:27px}
-  .hero-text{font-size:13px}
+  .hero-copy{transform:none}
+  .hero-copy h1{font-size:34px;line-height:1.02;letter-spacing:-1px}
+  .hero-copy h2{font-size:23px;line-height:1.08;letter-spacing:-.5px}
+  .hero-text{font-size:12px;line-height:1.4;max-width:100%}
   .center h2{font-size:25px}
   .passport-copy h2{font-size:27px}
   .companies-copy h2{font-size:29px}
   .market-copy h2{font-size:28px}
   .cta h2{font-size:27px}
+}
+
+/* REFINAMENTO V7 - SMARTPHONE
+   Conteúdo do hero sempre dentro da largura da tela. */
+@media(max-width:560px){
+  .wrap{
+    width:calc(100% - 24px);
+    max-width:100%;
+  }
+
+  .hero{
+    height:560px;
+  }
+
+  .hero-inner{
+    width:100%;
+    padding:0 12px 52px;
+    align-items:flex-end;
+  }
+
+  .hero-copy{
+    width:100%;
+    max-width:100%;
+    padding-top:0;
+    margin:0;
+    transform:none;
+  }
+
+  .hero-copy .eyebrow{
+    font-size:8px;
+    letter-spacing:2px;
+    margin-bottom:7px;
+  }
+
+  .hero-copy h1,
+  .hero-copy h2,
+  .hero-copy .hero-text{
+    width:100%;
+    max-width:100%;
+    overflow-wrap:anywhere;
+  }
+
+  .hero-copy h1{
+    font-size:32px;
+    line-height:1;
+    letter-spacing:-1px;
+    margin:0;
+  }
+
+  .hero-copy h2{
+    font-size:22px;
+    line-height:1.08;
+    letter-spacing:-.4px;
+    margin:5px 0 10px;
+  }
+
+  .hero-text{
+    font-size:11px;
+    line-height:1.35;
+    margin:0 0 14px;
+  }
+
+  .hero-actions{
+    width:100%;
+    gap:8px;
+  }
+
+  .hero-actions .btn{
+    height:42px;
+    padding:0 14px;
+    font-size:11px;
+  }
+
+  .hero-controls{
+    right:10px;
+    bottom:12px;
+    gap:6px;
+    font-size:9px;
+  }
+
+  .hero-controls button{
+    width:34px;
+    height:34px;
+    font-size:22px;
+  }
+
+  .scroll-down{
+    width:32px;
+    height:32px;
+    bottom:-15px;
+  }
+
+  .benefit{
+    min-height:78px;
+    padding:10px 18px;
+  }
+
+  .benefit img{
+    width:34px;
+    height:34px;
+  }
 }
 
 
