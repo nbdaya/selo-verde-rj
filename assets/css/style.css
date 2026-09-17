@@ -195,6 +195,7 @@
 }
 
 @media(max-width:560px){
+  .hero-copy{transform:translateX(-145px)}
   .hero-copy h1{font-size:38px}
   .hero-copy h2{font-size:27px}
   .hero-text{font-size:13px}
