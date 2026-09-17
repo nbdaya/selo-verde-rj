@@ -408,3 +408,157 @@
         width:280px;
     }
 }
+
+
+/* =========================================================
+   REFINAMENTO V8 - HERO MOBILE
+   Layout pensado para smartphones estreitos (320-480px).
+   ========================================================= */
+@media (max-width: 600px){
+
+  .hero{
+    height:520px;
+    min-height:520px;
+    overflow:hidden;
+  }
+
+  .hero-photo{
+    background-position:68% center;
+    background-size:cover;
+  }
+
+  .hero-fade{
+    background:
+      linear-gradient(
+        90deg,
+        rgba(255,255,255,.98) 0%,
+        rgba(255,255,255,.94) 35%,
+        rgba(255,255,255,.66) 58%,
+        rgba(255,255,255,.10) 100%
+      );
+  }
+
+  .hero-inner{
+    height:100%;
+    width:100%;
+    padding:0;
+    display:flex;
+    align-items:center;
+  }
+
+  .hero-inner.wrap{
+    width:100%;
+    max-width:100%;
+  }
+
+  .hero-copy{
+    position:relative;
+    z-index:3;
+    width:100%;
+    max-width:355px;
+    margin:0;
+    padding:0 18px;
+    transform:none !important;
+  }
+
+  .hero-copy .eyebrow{
+    font-size:8px;
+    line-height:1.2;
+    letter-spacing:1.8px;
+    margin:0 0 8px;
+  }
+
+  .hero-copy h1{
+    font-size:31px !important;
+    line-height:1.02;
+    letter-spacing:-1.2px;
+    margin:0;
+    white-space:normal;
+  }
+
+  .hero-copy h2{
+    font-size:21px !important;
+    line-height:1.08;
+    letter-spacing:-.5px;
+    margin:7px 0 11px;
+    max-width:320px;
+  }
+
+  .hero-copy .hero-text{
+    font-size:11px !important;
+    line-height:1.42;
+    max-width:315px;
+    margin:0 0 16px;
+  }
+
+  .hero-actions{
+    display:flex;
+    width:auto;
+    flex-wrap:nowrap;
+    gap:8px;
+  }
+
+  .hero-actions .btn{
+    height:40px;
+    padding:0 13px;
+    border-radius:9px;
+    font-size:10px;
+  }
+
+  .hero-controls{
+    right:12px;
+    bottom:13px;
+    gap:6px;
+    font-size:9px;
+  }
+
+  .hero-controls i{
+    width:15px;
+  }
+
+  .hero-controls button{
+    width:33px;
+    height:33px;
+    font-size:20px;
+  }
+
+  .scroll-down{
+    width:30px;
+    height:30px;
+    bottom:-14px;
+    font-size:17px;
+  }
+}
+
+/* Telefones muito estreitos */
+@media (max-width:380px){
+
+  .hero{
+    height:500px;
+    min-height:500px;
+  }
+
+  .hero-copy{
+    max-width:335px;
+    padding:0 15px;
+  }
+
+  .hero-copy h1{
+    font-size:28px !important;
+  }
+
+  .hero-copy h2{
+    font-size:19px !important;
+  }
+
+  .hero-copy .hero-text{
+    font-size:10.5px !important;
+    max-width:295px;
+  }
+
+  .hero-actions .btn{
+    height:38px;
+    padding:0 11px;
+    font-size:9.5px;
+  }
+}
